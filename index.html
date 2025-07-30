@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+
+  <!-- Login Card -->
+  <div class="bg-white/10 backdrop-blur-lg text-white rounded-xl p-8 w-full max-w-sm border border-white/30 shadow-xl">
+    <h2 class="text-3xl font-bold text-center mb-6">Login</h2>
+
+    <!-- Input Fields -->
+    <div class="space-y-4">
+      <!-- Username -->
+      <div class="relative">
+        <input type="text" placeholder="Username" class="w-full py-2 pl-10 pr-3 bg-white/10 border border-white/30 text-white placeholder-white/70 rounded-full outline-none"/>
+        <span class="absolute left-3 top-2.5">👤</span>
+      </div>
+
+      <!-- Password -->
+      <div class="relative">
+        <input type="password" placeholder="Password" class="w-full py-2 pl-10 pr-3 bg-white/10 border border-white/30 text-white placeholder-white/70 rounded-full outline-none"/>
+        <span class="absolute left-3 top-2.5">🔒</span>
+      </div>
+    </div>
+
+    <!-- Options -->
+    <div class="flex justify-between items-center text-sm mt-3">
+      <label class="flex items-center space-x-2">
+        <input type="checkbox" class="form-checkbox text-white bg-transparent border-white/50" />
+        <span>Remember me</span>
+      </label>
+      <a href="#" class="text-blue-200 hover:underline">Forgot password?</a>
+    </div>
+
+    <!-- Login Button -->
+    <button class="w-full mt-5 py-2 bg-white text-green-900 font-bold rounded-full hover:bg-gray-100 transition">
+      Login
+    </button>
+
+    <!-- Register -->
+    <p class="text-center text-sm mt-5">
+      Don’t have an account?
+      <a href="#" class="text-blue-200 font-semibold hover:underline">Register</a>
+    </p>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignDesk - Home</title>
+  <script>
+    function handleUploadClick() {
+      window.location.href = 'upload.html';
+    }
+    function handlePortfolioClick() {
+      window.location.href = 'portfolio.html';
+    }
+    function handlePricingClick() {
+      window.location.href = 'pricing.html';
+    }
+    function handleContactClick() {
+      window.location.href = 'https://wa.me/919558381550'; // replace with your WhatsApp link
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');">
+  <div class="flex items-center justify-center min-h-screen bg-black/30">
+    <div class="backdrop-blur-md bg-white/10 rounded-2xl p-10 w-80 sm:w-96 text-white">
+      <h1 class="text-4xl font-bold text-center mb-8">Home</h1>
+      <button onclick="handleUploadClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5-5m0 0l5 5m-5-5v12" /></svg>
+        Upload
+      </button>
+      <button onclick="handlePortfolioClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" /></svg>
+        Portfolio
+      </button>
+      <button onclick="handlePricingClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.105 0-2 .672-2 1.5S10.895 11 12 11s2-.672 2-1.5S13.105 8 12 8zM4 6h16M4 18h16" /></svg>
+        Pricing
+      </button>
+      <button onclick="handleContactClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18" /></svg>
+        Contact
+      </button>
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');">
+  <div class="flex items-center justify-center min-h-screen bg-black/40">
+    <div class="backdrop-blur-md bg-white/10 rounded-2xl p-10 w-80 sm:w-96 text-white">
+      <h2 class="text-3xl font-bold mb-6 text-center">Upload Design</h2>
+      <form>
+        <label class="block mb-2">Design Name</label>
+        <input type="text" placeholder="e.g. Logo Design" class="w-full px-3 py-2 mb-4 rounded bg-white/20 text-white placeholder-white/60 border border-white/30"/>
+
+        <label class="block mb-2">Price (₹)</label>
+        <input type="number" placeholder="e.g. 499" class="w-full px-3 py-2 mb-4 rounded bg-white/20 text-white placeholder-white/60 border border-white/30"/>
+
+        <label class="block mb-2">Select File</label>
+        <input type="file" class="w-full px-3 py-2 mb-6 rounded bg-white/20 text-white file:bg-white/30 file:border-0 file:text-white file:px-4 file:py-2"/>
+
+        <button type="submit" class="w-full bg-white/20 hover:bg-white/30 text-white font-semibold py-2 rounded-full">Upload Design</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+  </script>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');">
+  <div class="bg-black/40 min-h-screen flex flex-col items-center pt-10 px-4">
+    <h1 class="text-white text-4xl font-bold mb-8">My Designs</h1>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl">
+      <!-- Design Card Example -->
+      <div class="backdrop-blur-md bg-white/10 text-white rounded-xl overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/400x250.png?text=Design+1" class="w-full h-48 object-cover"/>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Minimal Logo</h2>
+          <p class="mb-2">Price: ₹499</p>
+          <button onclick="handleContinue('design1')" class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full w-full">Continue</button>
+        </div>
+      </div>
+
+      <div class="backdrop-blur-md bg-white/10 text-white rounded-xl overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/400x250.png?text=Design+2" class="w-full h-48 object-cover"/>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">Creative Poster</h2>
+          <p class="mb-2">Price: ₹799</p>
+          <button onclick="handleContinue('design2')" class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full w-full">Continue</button>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - DesignDesk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Dummy design data (real case me backend se fetch karna hoga)
+    const designs = {
+      design1: { name: "Minimal Logo", price: "499" },
+      design2: { name: "Creative Poster", price: "799" }
+    };
+
+    window.onload = function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const designId = urlParams.get('design');
+      const design = designs[designId];
+
+      if (design) {
+        document.getElementById('designName').innerText = design.name;
+        document.getElementById('designPrice').innerText = `₹${design.price}`;
+      } else {
+        document.getElementById('paymentForm').innerHTML = '<p class="text-red-400">Invalid design selected.</p>';
+      }
+    };
+
+    function handlePayment(e) {
+      e.preventDefault();
+      // Basic validation (real case: integrate Razorpay or Stripe)
+      const name = document.getElementById('name').value;
+      const card = document.getElementById('card').value;
+      const expiry = document.getElementById('expiry').value;
+      const cvv = document.getElementById('cvv').value;
+
+      if (!name || !card || !expiry || !cvv) {
+        alert("Please fill all card details.");
+        return;
+      }
+
+      alert("Payment successful! Thank you.");
+      window.location.href = "thankyou.html"; // redirect after payment
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl w-96">
+    <h2 class="text-2xl font-bold mb-4 text-center">Payment</h2>
+    <div class="mb-4 text-center">
+      <p class="text-lg font-semibold" id="designName">Loading...</p>
+      <p class="text-sm" id="designPrice">₹0</p>
+    </div>
+    <form onsubmit="handlePayment(event)" id="paymentForm" class="space-y-4">
+      <input type="text" id="name" placeholder="Name on Card" class="w-full p-2 rounded bg-white/20 text-white placeholder-white/70"/>
+      <input type="text" id="card" placeholder="Card Number" class="w-full p-2 rounded bg-white/20 text-white placeholder-white/70"/>
+      <div class="flex gap-2">
+        <input type="text" id="expiry" placeholder="MM/YY" class="w-1/2 p-2 rounded bg-white/20 text-white placeholder-white/70"/>
+        <input type="text" id="cvv" placeholder="CVV" class="w-1/2 p-2 rounded bg-white/20 text-white placeholder-white/70"/>
+      </div>
+      <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-full">Pay Now</button>
+    </form>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Thank You</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-900 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-center">
+    <h1 class="text-3xl font-bold mb-4">Thank You!</h1>
+    <p>Your payment was successful. We'll contact you soon.</p>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignDesk - Home</title>
+  <script>
+    function handleUploadClick() {
+      window.location.href = 'upload.html';
+    }
+    function handlePortfolioClick() {
+      window.location.href = 'portfolio.html';
+    }
+    function handlePricingClick() {
+      window.location.href = 'pricing.html';
+    }
+    function handleContactClick() {
+      window.location.href = 'https://wa.me/919558381550';
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');">
+  <div class="flex items-center justify-center min-h-screen bg-black/30">
+    <div class="backdrop-blur-md bg-white/10 rounded-2xl p-10 w-80 sm:w-96 text-white">
+      <h1 class="text-4xl font-bold text-center mb-8">Home</h1>
+      <button onclick="handleUploadClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5-5m0 0l5 5m-5-5v12" /></svg>
+        Upload
+      </button>
+      <button onclick="handlePortfolioClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" /></svg>
+        Portfolio
+      </button>
+      <button onclick="handlePricingClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.105 0-2 .672-2 1.5S10.895 11 12 11s2-.672 2-1.5S13.105 8 12 8zM4 6h16M4 18h16" /></svg>
+        Pricing
+      </button>
+      <button onclick="handleContactClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18" /></svg>
+        Contact
+      </button>
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignDesk - Home</title>
+  <script>
+    function handleUploadClick() {
+      window.location.href = 'upload.html';
+    }
+    function handlePortfolioClick() {
+      window.location.href = 'portfolio.html';
+    }
+    function handlePricingClick() {
+      window.location.href = 'pricing.html';
+    }
+    function handleContactClick() {
+      window.location.href = 'https://wa.me/919558381550';
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');">
+  <div class="flex items-center justify-center min-h-screen bg-black/30">
+    <div class="backdrop-blur-md bg-white/10 rounded-2xl p-10 w-80 sm:w-96 text-white">
+      <h1 class="text-4xl font-bold text-center mb-8">Home</h1>
+      <button onclick="handleUploadClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5-5m0 0l5 5m-5-5v12" /></svg>
+        Upload
+      </button>
+      <button onclick="handlePortfolioClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" /></svg>
+        Portfolio
+      </button>
+      <button onclick="handlePricingClick()" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.105 0-2 .672-2 1.5S10.895 11 12 11s2-.672 2-1.5S13.105 8 12 8zM4 6h16M4 18h16" /></svg>
+        Pricing
+      </button>
+      <a href="https://wa.me/919558381550" target="_blank" class="w-full flex items-center gap-3 border border-white/30 px-4 py-3 rounded-full hover:bg-white/10 block text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18" /></svg>
+        Contact
+      </a>
+    </div>
+  </div>
+</body>
+</html>
